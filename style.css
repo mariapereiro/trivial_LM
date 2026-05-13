@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .titulo {
     background-color: cadetblue;
@@ -20,5 +22,39 @@
 }
 
 .titulo img, .espaciado {
-    width: 150px;   /* mismo tamaño los dos */
+    width: 150px;   
+}
+
+/* Página Categoría azul*/
+#body_azul{
+    background-color: rgb(84, 84, 250);
+}
+
+.azul_header{
+    background-color: rgb(0, 0, 149);
+    color: white;
+    width: 100%;         
+    padding: 50px 30px;  
+    display: block;      
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circulo {
+  width: 700px;
+  height: 700px;
+  border: 7px solid black;
+  border-radius: 70%;
+  background-color: rgb(189, 189, 189);
+  background: 
+      linear-gradient(90deg, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%),
+      linear-gradient(210deg, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%),
+      linear-gradient(330deg, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%);
 }
