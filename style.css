@@ -22,5 +22,20 @@
 }
 
 .titulo img, .espaciado {
-    width: 150px;   /* mismo tamaño los dos */
+    width: 150px;   
+}
+
+/* Página Categoría azul*/
+#body_azul{
+    background-color: rgb(84, 84, 250);
+}
+
+.azul_header{
+    background-color: rgb(0, 0, 149);
+    color: white;
+    width: 100%;         
+    padding: 50px 30px;  
+    display: block;      
+    box-sizing: border-box;
+    text-align: center;
 }
