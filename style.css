@@ -151,6 +151,66 @@ main{
     margin-bottom: 0.5rem;
 }
 
+/* Página categoría amarillo */
+#body_amarillo{
+    background-color: #FDF48B;
+}
+
+.amarillo_header{
+    background-color: #FCEB31;
+    color: white;
+    width: 100%;         
+    padding: 50px 30px;  
+    display: block;      
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#amarillo-pregunta-container {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#respuesta-lista-amarillo {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#respuesta-lista-amarillo li {
+    background: #ebcc00;
+    color: #fff;
+    border-radius: 8px;
+    padding: 14px 19px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    margin-top: 30px;
+}
+ 
+#respuesta-lista-amarillo li:hover {
+    background: #fff020;
+    border-color: #e2d700;
+}
+
+#amarillo-pregunta-texto {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px 15px;
+    color: #6a6c00;
+}
+
+#amarillo-pregunta-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
 
 
 
