@@ -5,10 +5,20 @@
 .titulo {
     background-color: cadetblue;
     color: antiquewhite;
-    width: 100%;          /* ocupa todo el ancho */
-    padding: 50px 30px;   /* le da altura y espacio interior */
-    display: block;       /* por si es un span u otro inline */
+    width: 100%;
+    padding: 50px 30px;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+    align-items: center;
+}
+
+.titulo h1 {
+    flex: 1;
     text-align: center;
+}
+
+.titulo img, .espaciado {
+    width: 150px;   /* mismo tamaño los dos */
 }
