@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-
 }
 .titulo {
     background-color: cadetblue;
@@ -41,20 +40,67 @@
 }
 
 .contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .circulo {
-  width: 700px;
-  height: 700px;
-  border: 7px solid black;
-  border-radius: 70%;
-  background-color: rgb(189, 189, 189);
-  background: 
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(180, 180, 180);
+    background-image: 
       linear-gradient(90deg, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%),
       linear-gradient(210deg, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%),
       linear-gradient(330deg, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%);
+  }
+
+  .cat {
+    position: absolute;
+    width: 120px;
+    height: 120px; /* Damos altura para que sean más fáciles de clicar */
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none; /* Quitamos el subrayado típico de los enlaces */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Posicionamiento manual con top/left (puedes ajustar estos números) */
+.c1 { 
+    top: 100px; 
+    left: 230px; 
+    margin-left: 100px;
+}
+.c2 { 
+    top: 250px; 
+    left: 350px; 
+    margin-left: 100px;
+
+}
+.c3 { 
+    top: 400px; 
+    left: 330px; 
+}
+.c4 { 
+    top: 400px; 
+    left: 140px; 
+}
+
+.c5 { 
+    top: 240px; 
+    left: 50px; 
+}
+.c6 { 
+    top: 100px; 
+    left: 140px; 
 }
