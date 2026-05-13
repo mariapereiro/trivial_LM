@@ -5,4 +5,10 @@
 .titulo {
     background-color: cadetblue;
     color: antiquewhite;
+    width: 100%;          /* ocupa todo el ancho */
+    padding: 50px 30px;   /* le da altura y espacio interior */
+    display: block;       /* por si es un span u otro inline */
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
