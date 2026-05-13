@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría: Deporte</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="body_naranja">
+    <header>
+        <div class="naranja_header">
+            <h1>PREGUNTA</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="naranja-pregunta-container">
+            <p id="naranja-pregunta-texto">Pegunta</p>
+             <div id="naranja-pregunta-info">
+                <span id="naranja-categoria"></span>
+                <span id="naranja-dificultad"></span>
+            </div>
+            <ul id="respuesta-lista-naranja"></ul>
+
+        </div>
+    </main>
+
+
+<script>
+        async function mostrarHabilidades() {
+        try {
+            let respuesta = await fetch("https://opentdb.com/api.php?amount=10&category=21"); 
+            let datos = await respuesta.json();
+            let h=datos.results[0];
+            
+            //Poner la pregunta en el HTML
+            document.getElementById("naranja-pregunta-texto").innerHTML = h.question;
+            document.getElementById("naranja-categoria").innerHTML="Categoría: "+h.category;
+            document.getElementById("naranja-dificultad").innerHTML="Dificultad: "+h.difficulty;
+
+            //Random de respuestas
+            let opciones=[];
+
+            for(let incorrecta of h.incorrect_answers){
+                opciones.push(incorrecta);
+            }
+
+            opciones.push(h.correct_answer);
+            opciones.sort(() => Math.random() - 0.5);
+
+            const letras=["a","b","c","d"];
+            const lista = document.getElementById("respuesta-lista-naranja");
+
+            opciones.forEach((opcion, i) => {
+                let li=document.createElement("li");
+                li.textContent = letras[i] + ") " + opcion;
+                lista.appendChild(li);
+            });
+
+
+        } catch (error) {
+            console.log("Error: ", error);
+        }
+        }
+
+mostrarHabilidades();
+</script>
+</body>
+</html>
