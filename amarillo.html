@@ -27,7 +27,7 @@
 
 
 <script>
-        async function mostrarHabilidades() {
+        async function mostrarPregunta() {
         try {
             let respuesta = await fetch("https://opentdb.com/api.php?amount=10&category=23"); 
             let datos = await respuesta.json();
@@ -63,7 +63,7 @@
         }
         }
 
-mostrarHabilidades();
+mostrarPregunta();
 </script>
 </body>
 </html>
