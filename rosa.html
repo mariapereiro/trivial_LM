@@ -2,23 +2,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoría: Geografía</title>
+    <title>Categoría: Entretenimiento</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body id="body_azul">
+<body id="body_rosa">
     <header>
-        <div class="azul_header">
+        <div class="rosa_header">
             <h1>PREGUNTA</h1>
         </div>
     </header>
 
     <main>
-        <div id="azul-pregunta-container">
-            <p id="azul-pregunta-texto">Pegunta</p>
-             <div id="azul-pregunta-info">
-                <span id="azul-categoria"></span>
-                <span id="azul-dificultad"></span>
+        <div id="rosa-pregunta-container">
+            <p id="rosa-pregunta-texto">Pegunta</p>
+             <div id="rosa-pregunta-info">
+                <span id="rosa-categoria"></span>
+                <span id="rosa-dificultad"></span>
             </div>
             <ul id="respuesta-lista"></ul>
 
@@ -34,9 +34,9 @@
             let h=datos.results[0];
             
             //Poner la pregunta en el HTML
-            document.getElementById("azul-pregunta-texto").innerHTML = h.question;
-            document.getElementById("azul-categoria").innerHTML="Categoría: "+h.category;
-            document.getElementById("azul-dificultad").innerHTML="Dificultad: "+h.difficulty;
+            document.getElementById("rosa-pregunta-texto").innerHTML = h.question;
+            document.getElementById("rosa-categoria").innerHTML="Categoría: "+h.category;
+            document.getElementById("rosa-dificultad").innerHTML="Dificultad: "+h.difficulty;
 
             //Random de respuestas
             let opciones=[];
