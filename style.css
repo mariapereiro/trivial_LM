@@ -1,14 +1,41 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .titulo {
     background-color: cadetblue;
     color: antiquewhite;
-    width: 100%;          /* ocupa todo el ancho */
-    padding: 50px 30px;   /* le da altura y espacio interior */
-    display: block;       /* por si es un span u otro inline */
+    width: 100%;
+    padding: 50px 30px;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+    align-items: center;
+}
+
+.titulo h1 {
+    flex: 1;
+    text-align: center;
+}
+
+.titulo img, .espaciado {
+    width: 150px;   
+}
+
+/* Página Categoría azul*/
+#body_azul{
+    background-color: rgb(84, 84, 250);
+}
+
+.azul_header{
+    background-color: rgb(0, 0, 149);
+    color: white;
+    width: 100%;         
+    padding: 50px 30px;  
+    display: block;      
+    box-sizing: border-box;
     text-align: center;
 }
