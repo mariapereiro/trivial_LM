@@ -20,7 +20,7 @@
                 <span id="rosa-categoria"></span>
                 <span id="rosa-dificultad"></span>
             </div>
-            <ul id="respuesta-lista"></ul>
+            <ul id="respuesta-lista-rosa"></ul>
 
         </div>
     </main>
@@ -29,7 +29,7 @@
 <script>
     async function mostrarHabilidades() {
         try {
-            let respuesta = await fetch("https://opentdb.com/api.php?amount=10&category=22"); 
+            let respuesta = await fetch("https://opentdb.com/api.php?amount=10&category=15"); 
             let datos = await respuesta.json();
             let h=datos.results[0];
             
@@ -49,7 +49,7 @@
             opciones.sort(() => Math.random() - 0.5);
 
             const letras=["a","b","c","d"];
-            const lista = document.getElementById("respuesta-lista");
+            const lista = document.getElementById("respuesta-lista-rosa");
 
             opciones.forEach((opcion, i) => {
                 let li=document.createElement("li");

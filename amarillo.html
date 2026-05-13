@@ -6,19 +6,19 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body id="body_azul">
+<body id="body_amarillo">
     <header>
-        <div class="azul_header">
+        <div class="amarillo_header">
             <h1>PREGUNTA</h1>
         </div>
     </header>
 
     <main>
-        <div id="azul-pregunta-container">
-            <p id="azul-pregunta-texto">Pegunta</p>
-             <div id="azul-pregunta-info">
-                <span id="azul-categoria"></span>
-                <span id="azul-dificultad"></span>
+        <div id="amarillo-pregunta-container">
+            <p id="amarillo-pregunta-texto">Pegunta</p>
+             <div id="amarillo-pregunta-info">
+                <span id="amarillo-categoria"></span>
+                <span id="amarillo-dificultad"></span>
             </div>
             <ul id="respuesta-lista"></ul>
 
@@ -34,9 +34,9 @@
             let h=datos.results[0];
             
             //Poner la pregunta en el HTML
-            document.getElementById("azul-pregunta-texto").innerHTML = h.question;
-            document.getElementById("azul-categoria").innerHTML="Categoría: "+h.category;
-            document.getElementById("azul-dificultad").innerHTML="Dificultad: "+h.difficulty;
+            document.getElementById("amarillo-pregunta-texto").innerHTML = h.question;
+            document.getElementById("amarillo-categoria").innerHTML="Categoría: "+h.category;
+            document.getElementById("amarillo-dificultad").innerHTML="Dificultad: "+h.difficulty;
 
             //Random de respuestas
             let opciones=[];
