@@ -212,6 +212,127 @@ main{
 }
 
 
+/* Página categoría morada */
+#body_morado{
+    background-color: #ED6AFF;
+}
+
+.morado_header{
+    background-color: #B900D1;
+    color: white;
+    width: 100%;         
+    padding: 50px 30px;  
+    display: block;      
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#morado-pregunta-container {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#respuesta-lista-morado {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#respuesta-lista-morado li {
+    background: #ad31cc;
+    color: #fff;
+    border-radius: 8px;
+    padding: 14px 19px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    margin-top: 30px;
+}
+ 
+#respuesta-lista-morado li:hover {
+    background: #d97eec;
+    border-color: #9301a3;
+}
+
+#morado-pregunta-texto {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px 15px;
+    color: #5a005a;
+}
+
+#morado-pregunta-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Página categoría verde */
+#body_verde{
+    background-color: #C2E9A0;
+}
+
+.verde_header{
+    background-color: #64A928;
+    color: white;
+    width: 100%;         
+    padding: 50px 30px;  
+    display: block;      
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#verde-pregunta-container {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#respuesta-lista-verde {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#respuesta-lista-verde li {
+    background: #198304cf;
+    color: #fff;
+    border-radius: 8px;
+    padding: 14px 19px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    margin-top: 30px;
+}
+ 
+#respuesta-lista-verde li:hover {
+    background: #6ef15c;
+    border-color: #00a408;
+}
+
+#verde-pregunta-texto {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px 15px;
+    color: #30a000;
+}
+
+#verde-pregunta-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
 
 
 
