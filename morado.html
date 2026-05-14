@@ -2,25 +2,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoría: Geografía</title>
+    <title>Categoría: Arte</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body id="body_azul">
+<body id="body_morado">
     <header>
-        <div class="azul_header">
+        <div class="morado_header">
             <h1>PREGUNTA</h1>
         </div>
     </header>
 
     <main>
-        <div id="azul-pregunta-container">
-            <p id="azul-pregunta-texto">Pegunta</p>
-             <div id="azul-pregunta-info">
-                <span id="azul-categoria"></span>
-                <span id="azul-dificultad"></span>
+        <div id="morado-pregunta-container">
+            <p id="morado-pregunta-texto">Pegunta</p>
+             <div id="morado-pregunta-info">
+                <span id="morado-categoria"></span>
+                <span id="morado-dificultad"></span>
             </div>
-            <ul id="respuesta-lista"></ul>
+            <ul id="respuesta-lista-morado"></ul>
 
         </div>
     </main>
@@ -29,14 +29,14 @@
 <script>
         async function mostrarPregunta() {
         try {
-            let respuesta = await fetch("https://opentdb.com/api.php?amount=10&category=22"); 
+            let respuesta = await fetch("https://opentdb.com/api.php?amount=10&category=25"); 
             let datos = await respuesta.json();
             let h=datos.results[0];
             
             //Poner la pregunta en el HTML
-            document.getElementById("azul-pregunta-texto").innerHTML = h.question;
-            document.getElementById("azul-categoria").innerHTML="Categoría: "+h.category;
-            document.getElementById("azul-dificultad").innerHTML="Dificultad: "+h.difficulty;
+            document.getElementById("morado-pregunta-texto").innerHTML = h.question;
+            document.getElementById("morado-categoria").innerHTML="Categoría: "+h.category;
+            document.getElementById("morado-dificultad").innerHTML="Dificultad: "+h.difficulty;
 
             //Random de respuestas
             let opciones=[];
@@ -49,7 +49,7 @@
             opciones.sort(() => Math.random() - 0.5);
 
             const letras=["a","b","c","d"];
-            const lista = document.getElementById("respuesta-lista");
+            const lista = document.getElementById("respuesta-lista-morado");
 
             opciones.forEach((opcion, i) => {
                 let li=document.createElement("li");
