@@ -10,6 +10,10 @@
     padding: 50px 30px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+<<<<<<< Updated upstream
+=======
+    font-size: 30px;
+>>>>>>> Stashed changes
     display: flex;
     align-items: center;
 }
@@ -401,60 +405,36 @@ main{
     margin: 0;
 }
 
-.circulo {
-    width: 600px;
-    height: 600px;
+.ruleta {
+    width: 500px; height: 500px;
     border: 5px solid black;
     border-radius: 50%;
     position: relative;
-    background-color: rgb(180, 180, 180);
-    background-image: 
-      linear-gradient(90deg, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%),
-      linear-gradient(210deg, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%),
-      linear-gradient(330deg, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%);
+    overflow: hidden;
+    /* Los colores del Trivial */
+    background: conic-gradient(
+      #f1c40f 0deg 60deg, #3498db 60deg 120deg, #e67e22 120deg 180deg, 
+      #e74c3c 180deg 240deg, #2ecc71 240deg 300deg, #9b59b6 300deg 360deg
+    );
   }
 
-  .cat {
+  .sector {
     position: absolute;
-    width: 120px;
-    height: 120px; /* Damos altura para que sean más fáciles de clicar */
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    color: black;
-    text-decoration: none; /* Quitamos el subrayado típico de los enlaces */
+    width: 100%; height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 60px; /* Controla qué tan lejos del centro queda el texto */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 2px black;
   }
 
-  /* Posicionamiento manual con top/left (puedes ajustar estos números) */
-.c1 { 
-    top: 100px; 
-    left: 230px; 
-    margin-left: 100px;
-}
-.c2 { 
-    top: 250px; 
-    left: 350px; 
-    margin-left: 100px;
-
-}
-.c3 { 
-    top: 400px; 
-    left: 330px; 
-}
-.c4 { 
-    top: 400px; 
-    left: 140px; 
-}
-
-.c5 { 
-    top: 240px; 
-    left: 50px; 
-}
-.c6 { 
-    top: 100px; 
-    left: 140px; 
-}
+  /* Rotamos cada sector para que el texto caiga en su color */
+  .l1 { top: 20px; left: 100px; }
+  .l2 { top: 100px; left: 110px; }
+  .l3 { top: 180px; left: 170px; }
+  .l4 { top: 330px; left: 100px; }
+  .l5 { top: 100px; left: 100px; }
+  .l6 { top: 100px; left: 100px; }
