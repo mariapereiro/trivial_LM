@@ -397,44 +397,48 @@ main{
 }
 
 
-.contenedor {
+.contenedor-trivial {
+    display: flex;
+    flex-wrap: wrap; /* Permite que salten de línea si no caben */
+    justify-content: center;
+    gap: 30px; /* Espacio de separación entre cada círculo */
+    max-width: 600px;
+    margin: 50px auto;
+    font-family: sans-serif;
+  }
+
+  /* Estilo base para todos los círculos */
+  .ficha {
+    width: 150px;
+    height: 150px;
+    border: 4px solid black;
+    border-radius: 50%; /* Esto los hace perfectamente redondos */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.ruleta {
-    width: 500px; height: 500px;
-    border: 5px solid black;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    /* Los colores del Trivial */
-    background: conic-gradient(
-      #f1c40f 0deg 60deg, #3498db 60deg 120deg, #e67e22 120deg 180deg, 
-      #e74c3c 180deg 240deg, #2ecc71 240deg 300deg, #9b59b6 300deg 360deg
-    );
-  }
-
-  .sector {
-    position: absolute;
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 60px; /* Controla qué tan lejos del centro queda el texto */
     text-decoration: none;
-    color: white;
+    text-align: center;
     font-weight: bold;
-    font-family: sans-serif;
-    text-shadow: 1px 1px 2px black;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    transition: transform 0.2s ease; /* Efecto suave al pasar el ratón */
   }
 
-  /* Rotamos cada sector para que el texto caiga en su color */
-  .l1 { top: 20px; left: 100px; }
-  .l2 { top: 100px; left: 110px; }
-  .l3 { top: 180px; left: 170px; }
-  .l4 { top: 330px; left: 100px; }
-  .l5 { top: 100px; left: 100px; }
-  .l6 { top: 100px; left: 100px; }
+  /* Animación al pasar el cursor */
+  .ficha:hover {
+    transform: scale(1.1); /* Crece un poco */
+  }
+
+  /* Colores individuales para cada categoría del Trivial */
+  .f-geografia { background-color: #0f26f1; }       /* Amarillo */
+  .f-historia { background-color: #d8db34; }        /* Azul */
+  .f-arte { background-color: #bf22e6; }            /* Naranja / Marrón */
+  .f-ciencia { background-color: #3fe73c; }         /* Rojo */
+  .f-deportes { background-color: #ff8c00; }        /* Verde */
+  .f-entretenimiento { background-color: #ff00bb; } /* Morado */
+
+  /* Ajuste por si el texto es largo, para que no se salga */
+  .ficha span {
+    padding: 10px;
+    font-size: 16px;
+  }
