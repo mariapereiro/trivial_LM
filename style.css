@@ -10,11 +10,8 @@
     padding: 50px 30px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-<<<<<<< HEAD
-    font-size: 30px;
-=======
->>>>>>> origin/main
-    display: flex;
+     font-size: 30px;
+     display: flex;
     align-items: center;
 }
 
