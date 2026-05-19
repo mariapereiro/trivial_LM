@@ -7,12 +7,13 @@
 
 </head>
 <body id="body_rosa">
-
-    <p id="marcador">Puntuación: 0 / 100</p>
     <header>
         <div class="rosa_header">
             <h1>PREGUNTA</h1>
         </div>
+        <p id="marcador">Puntuación: 0 / 100</p>
+        <button onclick="localStorage.setItem('puntos','0'); document.getElementById('marcador').textContent='Puntuación: 0 / 100'">Reiniciar</button>
+
     </header>
 
     <main>
