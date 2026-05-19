@@ -7,6 +7,8 @@
 
 </head>
 <body id="body_amarillo">
+
+    <p id="marcador">Puntuación: 0 / 100</p>
     <header>
         <div class="amarillo_header">
             <h1>PREGUNTA</h1>
@@ -54,6 +56,12 @@
             opciones.forEach((opcion, i) => {
                 let li=document.createElement("li");
                 li.textContent = letras[i] + ") " + opcion;
+                li.onclick = () => {
+                let pts = parseFloat(localStorage.getItem('puntos') || '0');
+                    if (opcion === h.correct_answer) pts += 16.7;
+                    localStorage.setItem('puntos', pts.toFixed(1));
+                    window.location.href = 'index.html';
+                };
                 lista.appendChild(li);
             });
 
@@ -63,6 +71,7 @@
         }
         }
 
+document.getElementById('marcador').textContent = 'Puntuación: ' + (localStorage.getItem('puntos') || '0') + ' / 100';
 mostrarPregunta();
 </script>
 </body>
